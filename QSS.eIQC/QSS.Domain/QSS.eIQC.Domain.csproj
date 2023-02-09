@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SeedData\CertificateType.json" />
+    <None Remove="SeedData\CertificateTypeParameter.json" />
+  </ItemGroup>
+
+ 	<ItemGroup>
+		<EmbeddedResource Include="SeedData\CertificateType.json" />
+		<EmbeddedResource Include="SeedData\CertificateTypeParameter.json" />
+		<EmbeddedResource Include="SeedData\Role.json" />
+		<EmbeddedResource Include="SeedData\SAPDataSyncDetails.json" />
+		<EmbeddedResource Include="SeedData\User.json" />
+		<EmbeddedResource Include="SeedData\RolePermission.json" />
+		<EmbeddedResource Include="SeedData\UserRole.json" />
+		<EmbeddedResource Include="SeedData\Department.json" />
+		<EmbeddedResource Include="SeedData\Manager.json" />
+		<EmbeddedResource Include="SeedData\TM1DataSyncDetails.json" />
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="QSS.Common.Utilities.EntityFramework" Version="0.1.207714" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QSS.eIQC.Utilities\QSS.eIQC.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

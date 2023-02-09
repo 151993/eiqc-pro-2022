@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\Role\AddRoleCommandHandlerTests.cs" />
+    <Compile Remove="Commands\Role\DeleteRoleCommandHandlerTests.cs" />
+    <Compile Remove="Commands\Role\UpdateRoleCommandHandlerTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QSS.DataAccess\QSS.eIQC.DataAccess.csproj" />
+    <ProjectReference Include="..\QSS.Domain\QSS.eIQC.Domain.csproj" />
+    <ProjectReference Include="..\QSS.eIQC.DataAccess.UnitTests\QSS.eIQC.DataAccess.UnitTests.csproj" />
+    <ProjectReference Include="..\QSS.eIQC.UnitTests.Core\QSS.eIQC.UnitTests.Core.csproj" />
+    <ProjectReference Include="..\QSS.Handlers\QSS.eIQC.Handlers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Role\" />
+  </ItemGroup>
+
+</Project>

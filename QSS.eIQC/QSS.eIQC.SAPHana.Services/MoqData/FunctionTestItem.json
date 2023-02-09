@@ -1,0 +1,17 @@
+[
+  {
+    "Id": 1,
+    "IsEnabled": true,
+    "CharValue": "SMT"
+  },
+  {
+    "Id": 2,
+    "IsEnabled": true,
+    "CharValue": "SOIC"
+  },
+  {
+    "Id": 3,
+    "IsEnabled": true,
+    "CharValue": "PRSFIT"
+  }
+]

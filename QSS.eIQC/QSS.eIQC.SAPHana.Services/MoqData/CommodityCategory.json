@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "IsEnabled": true,
+    "Class": "ASIC", //Commodity_name
+    "Category": "Category I"
+  },
+  {
+    "Id": 2,
+    "IsEnabled": true,
+    "Class": "CABLE", //Commodity_name
+    "Category": "Category II"
+  }
+]

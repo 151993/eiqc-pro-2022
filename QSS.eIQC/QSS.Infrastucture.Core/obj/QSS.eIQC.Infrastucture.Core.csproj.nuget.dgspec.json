@@ -1,0 +1,218 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Infrastucture.Core\\QSS.eIQC.Infrastucture.Core.csproj": {}
+  },
+  "projects": {
+    "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj",
+        "projectName": "QSS.eIQC.Utilities",
+        "projectPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj",
+        "packagesPath": "C:\\nuget\\global-packages\\.nuget\\packages",
+        "outputPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\2930217\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Infrastucture.Core\\QSS.eIQC.Infrastucture.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Infrastucture.Core\\QSS.eIQC.Infrastucture.Core.csproj",
+        "projectName": "QSS.eIQC.Infrastucture.Core",
+        "projectPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Infrastucture.Core\\QSS.eIQC.Infrastucture.Core.csproj",
+        "packagesPath": "C:\\nuget\\global-packages\\.nuget\\packages",
+        "outputPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Infrastucture.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\2930217\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj": {
+                "projectPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.7.0.35, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.1.5, )"
+            },
+            "AWSSDK.SecurityToken": {
+              "target": "Package",
+              "version": "[3.5.1.18, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.Data.Edm": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            },
+            "Microsoft.Data.OData": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            },
+            "Microsoft.Data.Services.Client": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.OData.Client": {
+              "target": "Package",
+              "version": "[7.8.1, )"
+            },
+            "Microsoft.OData.Core": {
+              "target": "Package",
+              "version": "[7.8.1, )"
+            },
+            "Microsoft.OData.Edm": {
+              "target": "Package",
+              "version": "[7.8.1, )"
+            },
+            "Microsoft.OData.Extensions.Client": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "Microsoft.OData.Extensions.Client.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "QSS.Common.Utilities.FileStorage": {
+              "target": "Package",
+              "version": "[0.1.207714, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Spatial": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "PartNo": "PR3086CN02-SG27M",
+    "IntClassNo": "357", //Commodity_id
+    "Class": "ASIC", //Commodity_name
+    "Category": "Category I", //Commodity Category
+    "Description": "ASIC - SAP update",
+    "IsEnabled": true,
+    "Intchar": "LOGPAC", //Inspection Item
+    "CharValue": "SOIC", //Function Test Item
+    "ValidFrom": "04/23/2016", //Commodity Valid From
+    "ValidTo": "04/25/2019", //Commodity Valid To
+    "CommodityCategoryOptionId": 1,
+    "CommodityCategoryId": 1
+
+  },
+  {
+    "PartNo": "PN8765",
+    "IntClassNo": "305", //Commodity_id
+    "Class": "CABLE", //Commodity_name
+    "Category": "Category I", //Commodity Category
+    "Description": "CABLE - SAP update",
+    "IsEnabled": true,
+    "Intchar": "LOGPAC", //Inspection Item
+    "CharValue": "SMT", //Function Test Item
+    "ValidFrom": "04/23/2020", //Commodity Valid From
+    "ValidTo": "04/25/2020", //Commodity Valid To
+    "CommodityCategoryOptionId": 1,
+    "CommodityCategoryId": 1
+  },
+  {
+    "PartNo": "TP09876",
+    "IntClassNo": "360", //Commodity_id
+    "Class": "CAPACITOR", //Commodity_name
+    "Category": "Category I", //Commodity Category
+    "Description": "CAPACITOR - SAP update",
+    "IsEnabled": true,
+    "Intchar": "LOGPAC", //Inspection Item
+    "CharValue": "SOIC", //Function Test Item
+    "ValidFrom": "04/23/2015", //Commodity Valid From
+    "ValidTo": "04/25/2017", //Commodity Valid To
+    "CommodityCategoryOptionId": 1,
+    "CommodityCategoryId": 1
+  }
+]

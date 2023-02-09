@@ -1,0 +1,1518 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QSS.eIQC.Api</name>
+    </assembly>
+    <members>
+        <member name="M:QSS.eIQC.Api.Controllers.Attachment.AttachmentController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Attachment.AttachmentController},MediatR.IMediator,Microsoft.AspNetCore.Http.IHttpContextAccessor,QSS.Infrastructure.Core.Services.FileService.IFileService,QSS.eIQC.DataAccess.DataContext.IQSSContext)">
+            <summary>
+            Contructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of AttachmentController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="contextAccessor">Injected instance of IHttpContextAccessor on runtime, <see cref="T:Microsoft.AspNetCore.Http.IHttpContextAccessor"/></param>
+            <param name="fileService"></param>
+            <param name="context">API Gateway, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Department.DepartmentController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Department.DepartmentController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Department.DepartmentController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Department.DepartmentController},MediatR.IMediator,QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="context">API Gateway, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">API Gateway, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Department.DepartmentController.Add(QSS.eIQC.Handlers.Commands.DepartmentCommand.Add.AddDepartmentModel)">
+            <summary>
+            Async POST Action method to Add new Department configuration
+            </summary>
+            <param name="request">Input parameter AddDepartmentModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.DepartmentCommand.Add.AddDepartmentModel"/></param>
+            <returns>If success should return newly added DepartmentModel <see cref="T:QSS.eIQC.Handlers.Commands.DepartmentCommand.DepartmentModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Department.DepartmentController.Update(System.Int32,QSS.eIQC.Handlers.Commands.DepartmentCommand.Update.UpdateDepartmentModel)">
+            <summary>
+            Async PUT Action method to update Department configuration
+            </summary>
+            <param name="id">Department Id as input in URL</param>
+            <param name="request">Input parameter UpdateDepartmentModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.DepartmentCommand.Update.UpdateDepartmentModel"/></param>
+            <returns>If success should return newly added DepartmentModel <see cref="T:QSS.eIQC.Handlers.Commands.DepartmentCommand.DepartmentModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Department.DepartmentController.Delete(QSS.eIQC.Handlers.Commands.DepartmentCommand.Delete.DeleteDepartmentModel)">
+            <summary>
+            Async DELETE Action method to delete Department configuration
+            </summary>
+            <param name="request">Input parameter DeleteDepartmentModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.DepartmentCommand.Delete.DeleteDepartmentModel"/></param>
+            <returns>If success should return newly added DeleteDepartmentResponse <see cref="T:QSS.eIQC.Handlers.Commands.DepartmentCommand.Delete.DeleteDepartmentResponse"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.Division.DivisionODataController">
+            <summary>
+            Site Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Division.DivisionODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Division.DivisionODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Division.DivisionODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Division.DivisionODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Division.DivisionODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Division.DivisionODataController.Get">
+            <summary>
+            OData api to retrieve a Division list
+            </summary>
+            <returns>An queryable object of DivisionnModel, <see cref="T:QSS.eIQC.Handlers.Commands.DivisionCommand.DivisionModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Division.DivisionODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a Division matching key 
+            </summary>
+            <param name="id">Takes input Division Id as a key</param>
+            <returns>An queryable object of DivisionModel,  <see cref="T:QSS.eIQC.Handlers.Commands.DivisionCommand.DivisionModel"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateController">
+            <summary>
+            EmailTemplate Controller provides ADD, Update and Delete operations
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateController},MediatR.IMediator,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Contructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of EmailTemplateController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="contextAccessor">Injected instance of IHttpContextAccessor on runtime, <see cref="T:Microsoft.AspNetCore.Http.IHttpContextAccessor"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateController.Update(System.Int32,QSS.eIQC.Handlers.Commands.EmailTemplateCommand.Update.UpdateEmailTemplateModel)">
+            <summary>
+            Async PUT Action method to update EmailTemplate configuration
+            </summary>
+            <param name="id">EmailTemplate Id as input in URL</param>
+            <param name="request">Input parameter UpdateEmailTemplateModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.EmailTemplateCommand.Update.UpdateEmailTemplateModel"/></param>
+            <returns>If success should return newly added EmailTemplateModel <see cref="T:QSS.eIQC.Handlers.Commands.EmailTemplateCommand.EmailTemplateModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateODataController">
+            <summary>
+            EmailTemplate Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateODataController._context">
+            <summary>
+            Store IApplicationConfigurationContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Contructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of EmailTemplateODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IApplicationConfigurationContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateODataController.Get">
+            <summary>
+            OData api to retrieve a EmailTemplate list
+            </summary>
+            <returns>An queryable object of EmailTemplateModel, <see cref="T:QSS.eIQC.Handlers.Commands.EmailTemplateCommand.EmailTemplateModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.EmailTemplate.EmailTemplateODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a Depertment matching key 
+            </summary>
+            <param name="id">Takes input EmailTemplate Id as a key</param>
+            <returns>An queryable object of EmailTemplateModel,  <see cref="T:QSS.eIQC.Handlers.Commands.EmailTemplateCommand.EmailTemplateModel"/></returns>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.IssueProperty.IssuePropertyODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.IssueProperty.IssuePropertyODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.IssueProperty.IssuePropertyODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.IssueProperty.IssuePropertyODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.IssueProperty.IssuePropertyODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.IssueProperty.IssuePropertyODataController.Get">
+            <summary>
+            OData api to retrieve a IssueProperty list
+            </summary>
+            <returns>An queryable object of IssuePropertyModel, <see cref="T:QSS.eIQC.Handlers.Commands.IssuePropertyCommand.IssuePropertyModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.IssueProperty.IssuePropertyODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a collection of IssuePropertys that matches with the input
+            </summary>
+            <param name="id">Takes input id as a key</param>
+            <returns>An queryable object of IssuePropertyModel,  <see cref="T:QSS.eIQC.Handlers.Commands.IssuePropertyCommand.IssuePropertyModel"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.Issue.IssueController">
+            <summary>
+            Issue controller
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Issue.IssueController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Issue.IssueController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Issue.IssueController},MediatR.IMediator,QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of IssueController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">API Gateway, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="mapper">Mapper, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueController.Add(QSS.eIQC.Handlers.Commands.IssueCommand.Add.AddIssueModel)">
+            <summary>
+            Async POST Action method to Add new Issue configuration
+            </summary>
+            <param name="request">Input parameter AddIssueModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.Add.AddIssueModel"/></param>
+            <returns>If success should return newly added IssueModel <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.IssueModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueController.GetIssueById(System.Int32)">
+            <summary>
+            Retrieve issue by id
+            </summary>
+            <param name="id"> issue id <see cref="T:System.Int32"/></param>
+            <returns>issue detail <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.IssueModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueController.GetIssue">
+            <summary>
+            Retrieve issue list with enabled elements
+            </summary>
+            <returns>issue list<see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.IssueModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueController.Update(System.Int32,QSS.eIQC.Handlers.Commands.IssueCommand.Update.UpdateIssueModel)">
+            <summary>
+            Async PUT Action method to update Issue configuration
+            </summary>
+            <param name="id">Issue Id as input in URL</param>
+            <param name="request">Input parameter UpdateIssueModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.Update.UpdateIssueModel"/></param>
+            <returns>If success should return newly added IssueModel <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.IssueModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueController.Delete(QSS.eIQC.Handlers.Commands.IssueCommand.Delete.DeleteIssueModel)">
+            <summary>
+            Async DELETE Action method to delete Issue configuration
+            </summary>
+            <param name="request">Input parameter DeleteIssueModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.Delete.DeleteIssueModel"/></param>
+            <returns>If success should return newly added DeleteIssueResponse <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.Delete.DeleteIssueResponse"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.Issue.IssueODataController">
+            <summary>
+            Manage issues interface
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Issue.IssueODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Issue.IssueODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Issue.IssueODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Issue.IssueODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueODataController.Get">
+            <summary>
+            OData api to retrieve a User list
+            </summary>
+            <returns>An queryable object of IssueModel, <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.IssueModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Issue.IssueODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a collection of users that matches with the input
+            </summary>
+            <param name="id">Takes input id as a key</param>
+            <returns>An queryable object of IssueModel,  <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.IssueModel"/></returns>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Region.RegionController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Region.RegionController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Region.RegionController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Region.RegionController},MediatR.IMediator,QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of RegionController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="context">API Gateway, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">API Gateway, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Region.RegionController.Get">
+            <summary>
+            OData api to retrieve a Region list
+            </summary>
+            <returns>An queryable object of RegionModel, <see cref="T:QSS.eIQC.Handlers.Commands.RegionCommand.RegionModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Region.RegionController.Add(QSS.eIQC.Handlers.Commands.RegionCommand.Add.AddRegionModel)">
+            <summary>
+            Async POST Action method to Add new Issue configuration
+            </summary>
+            <param name="request">Input parameter AddIssueModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.Add.AddIssueModel"/></param>
+            <returns>If success should return newly added IssueModel <see cref="T:QSS.eIQC.Handlers.Commands.IssueCommand.IssueModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Region.RegionController.Update(System.Int32,QSS.eIQC.Handlers.Commands.RegionCommand.Update.UpdateRegionModel)">
+            <summary>
+            Async PUT Action method to update Region configuration
+            </summary>
+            <param name="id">Region Id as input in URL</param>
+            <param name="request">Input parameter UpdateRegionModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.RegionCommand.Update.UpdateRegionModel"/></param>
+            <returns>If success should return newly added RegionModel <see cref="T:QSS.eIQC.Handlers.Commands.RegionCommand.RegionModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Region.RegionController.Delete(QSS.eIQC.Handlers.Commands.RegionCommand.Delete.DeleteRegionModel)">
+            <summary>
+            Async DELETE Action method to delete Region configuration
+            </summary>
+            <param name="request">Input parameter DeleteRegionModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.RegionCommand.Delete.DeleteRegionModel"/></param>
+            <returns>If success should return newly added DeleteRegionResponse <see cref="T:QSS.eIQC.Handlers.Commands.RegionCommand.Delete.DeleteRegionResponse"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Site.SiteController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Site.SiteController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Site.SiteController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Site.SiteController},MediatR.IMediator,QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of IssueController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">API Gateway, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="mapper">Mapper, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.SourceProperty.SourcePropertyODataController">
+            <summary>
+            SourceProperty controller
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.SourceProperty.SourcePropertyODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.SourceProperty.SourcePropertyODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.SourceProperty.SourcePropertyODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.SourceProperty.SourcePropertyODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.SourceProperty.SourcePropertyODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.SourceProperty.SourcePropertyODataController.Get">
+            <summary>
+            OData api to retrieve a User list
+            </summary>
+            <returns>An queryable object of SourceProperty, <see cref="T:QSS.eIQC.Handlers.Commands.SourcePropertyCommand.SourcePropertyModel"/></returns>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Source.SourceController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Source.SourceController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Source.SourceController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Source.SourceController},MediatR.IMediator,QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of SourceController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="context"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Source.SourceController.Add(QSS.eIQC.Handlers.Commands.SourceCommand.Add.AddSourceModel)">
+            <summary>
+            Async POST Action method to Add new Source configuration
+            </summary>
+            <param name="request">Input parameter AddSourceModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.SourceCommand.Add.AddSourceModel"/></param>
+            <returns>If success should return newly added RoleModel <see cref="T:QSS.eIQC.Handlers.Commands.SourceCommand.SourceModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Source.SourceController.Update(System.Int32,QSS.eIQC.Handlers.Commands.SourceCommand.Update.UpdateSourceModel)">
+            <summary>
+            Async PUT Action method to update Source configuration
+            </summary>
+            <param name="id">Source Id as input in URL</param>
+            <param name="request">Input parameter UpdateSourceModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.SourceCommand.Update.UpdateSourceModel"/></param>
+            <returns>If success should return newly added RoleModel <see cref="T:QSS.eIQC.Handlers.Commands.SourceCommand.SourceModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Source.SourceController.Delete(QSS.eIQC.Handlers.Commands.SourceCommand.Delete.DeleteSourceModel)">
+            <summary>
+            Async DELETE Action method to delete Source configuration
+            </summary>
+            <param name="request">Input parameter DeleteSourceModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.SourceCommand.Delete.DeleteSourceModel"/></param>
+            <returns>If success should return newly added DeleteSourceResponse <see cref="T:QSS.eIQC.Handlers.Commands.SourceCommand.Delete.DeleteSourceResponse"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.Source.SourceODataController">
+            <summary>
+            Source controller
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Source.SourceODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Source.SourceODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Source.SourceODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Source.SourceODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.Source.SourceODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Source.SourceODataController.Get">
+            <summary>
+            OData api to retrieve a User list
+            </summary>
+            <returns>An queryable object of Source, <see cref="T:QSS.eIQC.Handlers.Commands.SourceCommand.SourceModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Source.SourceODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a Region matching key 
+            </summary>
+            <param name="id">Takes input Region Id as a key</param>
+            <returns>An queryable object of RegionModel,  <see cref="T:QSS.eIQC.Handlers.Commands.SourceCommand.SourceModel"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.Sync.SyncController">
+            <summary>
+            this endpoint is public
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Sync.SyncController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.Sync.SyncController._tmOne">
+            <summary>
+            TM1 service
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.Sync.SyncController.Sync">
+            <summary>
+            Sync TM1 data with eBaseline (sites, customers)
+            </summary>
+            <returns>If success should return newly added IssueModel <see cref="T:QSS.eIQC.Handlers.Commands.SiteCommand.SiteModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationController},MediatR.IMediator,QSS.Infrastructure.Core.Services.QSSGatewayAPI.IQSSGatewayAPIClient)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of UserController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="qssClient">API gateway, <see cref="T:QSS.Infrastructure.Core.Services.QSSGatewayAPI.IQSSGatewayAPIClient"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationController.Add(QSS.eIQC.Handlers.Commands.SystemConfigurationCommand.SystemConfigurationModel)">
+            <summary>
+            Async POST Action method to Add new system configuration
+            </summary>
+            <param name="request">Input parameter AddUserModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand.Add.AddUserModel"/></param>
+            <returns>If success should return newly added UserModel <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand._UserModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationODataController">
+            <summary>
+            Department Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationODataController.Get">
+            <summary>
+            OData api to retrieve a User list
+            </summary>
+            <returns>An queryable object of _UserModel, <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand._UserModel"/></returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Controllers.SystemConfiguration.SystemConfigurationODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a collection of users that matches with the input
+            </summary>
+            <param name="id">Takes input id as a key</param>
+            <returns>An queryable object of _UserModel,  <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand._UserModel"/></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Extensions.Authentication.ConfigureAuthentication">
+            <summary>
+            original QSS service to provide authentication
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.Authentication.ConfigureAuthentication.ConfigureAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configures identity provider
+            </summary>
+            <param name="services">net service</param>
+            <param name="configuration">app configuration</param>
+        </member>
+        <member name="T:QSS.eIQC.Api.Extensions.Authentication.OktaExtension">
+            <summary>
+            enables Okta service
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.Authentication.OktaExtension.ConfigureOkta(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            enables Okta service, this replace original service <see cref="T:QSS.eIQC.Api.Extensions.Authentication.ConfigureAuthentication"/>
+            </summary>
+            <param name="services">application service <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/></param>
+            <param name="configuration">application configuration <see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/></param>
+        </member>
+        <member name="T:QSS.eIQC.Api.Extensions.Cors.CorsExtension">
+            <summary>
+            Extension to setup CORS configuration
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Extensions.Cors.CorsExtension.QSSAllowSpecificOrigins">
+            <summary>
+            Policy cors name
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.Cors.CorsExtension.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            CORS configurations
+            </summary>
+            <param name="services">application service <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/></param>
+            <param name="configuration">app settings configuration <see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/></param>
+        </member>
+        <member name="T:QSS.eIQC.Api.Extensions.DependencyInyection.DependencyInyectionExtension">
+            <summary>
+            register all dependencies
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.DependencyInyection.DependencyInyectionExtension.DependencyInyectionConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configure all dependency injection
+            </summary>
+            <param name="services">Application services<see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/></param>
+            <param name="configuration">Application configuration<see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/></param>
+        </member>
+        <member name="T:QSS.eIQC.Api.Extensions.Environment.HostingEnvironmentExtension">
+            <summary>
+            Custom environments extension
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Extensions.Environment.HostingEnvironmentExtension.QualityAssurance">
+            <summary>
+            Quality assurance environment
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Extensions.Environment.HostingEnvironmentExtension.Local">
+            <summary>
+            Local environment
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.Environment.HostingEnvironmentExtension.IsQA(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             Checks if the current host environment name is quality assurance.
+            </summary>
+            <param name="hostingEnvironment">An instance of <see cref="T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment"/>.</param>
+            <returns>True if the environment name is quality assurance.</returns>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.Environment.HostingEnvironmentExtension.IsLocal(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             Checks if the current host environment name is Local.
+            </summary>
+            <param name="hostingEnvironment">An instance of <see cref="T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment"/>.</param>
+            <returns>True if the environment name is local</returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Extensions.HealthCheck.CustomHealthCheckExtension">
+            <summary>
+            Custom health check
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Extensions.HealthCheck.CustomHealthCheckExtension._config">
+            <summary>
+            App settings data DI
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.HealthCheck.CustomHealthCheckExtension.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)">
+            <summary>
+            custom health check 
+            </summary>
+            <param name="context">Health check context <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext"/></param>
+            <param name="cancellationToken">cancellation token <see cref="T:System.Threading.CancellationToken"/></param>
+            <returns></returns>
+        </member>
+        <member name="F:QSS.eIQC.Api.Extensions.HealthCheck.HealthCheckDataBaseConnectionExtension._config">
+            <summary>
+            App settings data DI
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.HealthCheck.HealthCheckDataBaseConnectionExtension.CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken)">
+            <summary>
+            database health check 
+            </summary>
+            <param name="context">Health check context <see cref="T:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext"/></param>
+            <param name="cancellationToken">cancellation token <see cref="T:System.Threading.CancellationToken"/></param>
+            <returns></returns>
+        </member>
+        <member name="T:QSS.eIQC.Api.Extensions.OData.ODataExtension">
+            <summary>
+            OData extension
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.OData.ODataExtension.GetODataModels(System.IServiceProvider)">
+            <summary>
+            Generates the OData IEdm Models based on the DB Tables/Models
+            </summary>
+            <param name="serviceProvider"></param>
+            <returns><see cref="T:Microsoft.OData.Edm.IEdmModel"/></returns>
+            <remarks>
+            Just use models from handler to avoid issues. e.g. 
+            </remarks>
+        </member>
+        <member name="T:QSS.eIQC.Api.Extensions.Swagger.SwaggerService">
+            <summary>
+            Swagger extension
+            </summary>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.Swagger.SwaggerService.ConfigureSwaggerExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Method to configure the Swagger Services within the Application services interface
+            </summary>
+            <param name="services">The Service Collection <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/></param>
+            <param name="config">The Service Collection <see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Extensions.Swagger.SwaggerService.EnableSwaggerPipeline(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Enable Swagger pipeline
+            </summary>
+            <param name="app">application configuration <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/></param>
+            <param name="config">application settings <see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/></param>
+        </member>
+        <member name="T:QSS.eIQC.Api.Helpers.Extensions.ServiceCollectionExtensions">
+            <summary>
+            The Service Collection Extensions
+            </summary>
+            <seealso cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>
+        </member>
+        <member name="M:QSS.eIQC.Api.Helpers.Extensions.ServiceCollectionExtensions.UseSingleTransactionPerRequest(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Data.IsolationLevel)">
+            <summary>
+            Extension to use a single transaction per HTTP request
+            </summary>
+            <param name="serviceCollection">the <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/></param>
+            <param name="level">The <see cref="T:System.Data.IsolationLevel"/> for the transaction</param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Helpers.Extensions.ServiceCollectionExtensions.UseSqlServer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+            <summary>
+            Set up the Service SQL DB Context
+            </summary>
+            <param name="serviceCollection">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/></param>
+            <param name="applicationConfigurationConnectionString">The data migration connection string</param>
+        </member>
+        <member name="M:QSS.eIQC.Api.Helpers.Extensions.ServiceCollectionExtensions.UsePostgreSqlServer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+            <summary>
+            Set up the Service PostgreSQL DB Context
+            </summary>
+            <param name="serviceCollection">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/></param>
+            <param name="applicationConfigurationConnectionString">The data migration connection string</param>
+        </member>
+        <member name="T:QSS.eIQC.Api.Helpers.Filters.EnableQueryFromODataToAWS">
+            <summary>
+            Custom attribute to pass OData query params to API Gateway
+            </summary>
+            <remarks>
+            BUG: https://github.com/aws/aws-lambda-dotnet/issues/694
+            BUG: https://github.com/OData/WebApi/issues/1227
+            </remarks>
+        </member>
+        <member name="M:QSS.eIQC.Api.Helpers.Filters.EnableQueryFromODataToAWS.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            Action executed on request
+            </summary>
+            <param name="actionExecutedContext">Requested context <see cref="T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext"/></param>
+        </member>
+        <member name="T:QSS.eIQC.Api.Helpers.Okta.OktaHelper">
+            <summary>
+            Okta helper to map configuration from app settings
+            </summary>
+        </member>
+        <member name="F:QSS.eIQC.Api.Helpers.Okta.OktaHelper.OktaConfiguartion">
+            <summary>
+            app setting for okta
+            </summary>
+        </member>
+        <member name="P:QSS.eIQC.Api.Helpers.Okta.OktaHelper.Authority">
+            <summary>
+            origin autority
+            </summary>
+            <code>https://{replace-with-okta-domain}.okta.com/oauth2/default</code>
+        </member>
+        <member name="P:QSS.eIQC.Api.Helpers.Okta.OktaHelper.Audience">
+            <summary>
+            allowed audience
+            </summary>
+            <code>api://default</code>
+        </member>
+        <member name="M:QSS.eIQC.Api.LambdaEntryPoint.Init(Microsoft.AspNetCore.Hosting.IWebHostBuilder)">
+            <summary>
+            The builder has configuration, logging and Amazon API Gateway already configured. The startup class
+            needs to be configured in this method using the UseStartup() method.
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:QSS.eIQC.Api.LambdaEntryPoint.Init(Microsoft.Extensions.Hosting.IHostBuilder)">
+            <summary>
+            Use this override to customize the services registered with the IHostBuilder. 
+            
+            It is recommended not to call ConfigureWebHostDefaults to configure the IWebHostBuilder inside this method.
+            Instead customize the IWebHostBuilder in the Init(IWebHostBuilder) overload.
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:QSS.Controllers.AuditLogODataController">
+            <summary>
+            AuditLog Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.AuditLogODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.AuditLogODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.AuditLogODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.AuditLogODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.AuditLogODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of AuditLogODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.Controllers.AuditLogODataController.Get">
+            <summary>
+            OData api to retrieve a AuditLog list
+            </summary>
+            <returns>An queryable object of AuditLogModel, <see cref="T:QSS.eIQC.Handlers.Commands.AuditLogModel"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.AuditLogODataController.GetAuditLog(System.Int32)">
+            <summary>
+            OData api to return a Depertment matching key 
+            </summary>
+            <param name="id">Takes input AuditLog Id as a key</param>
+            <returns>An queryable object of AuditLogModel,  <see cref="T:QSS.eIQC.Handlers.Commands.AuditLogModel"/></returns>
+        </member>
+        <member name="T:QSS.Controllers.CustomerODataController">
+            <summary>
+            Customer Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.CustomerODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.CustomerODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.CustomerODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.CustomerODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.CustomerODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of CustomerODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.Controllers.CustomerODataController.Get">
+            <summary>
+            OData api to retrieve a Customer list
+            </summary>
+            <returns>An queryable object of CustomerModel, <see cref="T:QSS.eIQC.Handlers.Commands.CustomerCommand.CustomerModel"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.CustomerODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a Customer matching key 
+            </summary>
+            <param name="id">Takes input Customer Id as a key</param>
+            <returns>An queryable object of CustomerModel,  <see cref="T:QSS.eIQC.Handlers.Commands.CustomerCommand.CustomerModel"/></returns>
+        </member>
+        <member name="T:QSS.Controllers.DepartmentODataController">
+            <summary>
+            Department Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.DepartmentODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.DepartmentODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.DepartmentODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.DepartmentODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.DepartmentODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.Controllers.DepartmentODataController.Get">
+            <summary>
+            OData api to retrieve a Department list
+            </summary>
+            <returns>An queryable object of DepartmentModel, <see cref="T:QSS.eIQC.Handlers.Commands.DepartmentCommand.DepartmentModel"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.DepartmentODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a Department matching key 
+            </summary>
+            <param name="id">Takes input Department Id as a key</param>
+            <returns>An queryable object of DepartmentModel,  <see cref="T:QSS.eIQC.Handlers.Commands.DepartmentCommand.DepartmentModel"/></returns>
+        </member>
+        <member name="T:QSS.Controllers.RegionODataController">
+            <summary>
+            Region Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.RegionODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.RegionODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.RegionODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.RegionODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.RegionODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of RegionODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.Controllers.RegionODataController.Get">
+            <summary>
+            OData api to retrieve a Region list
+            </summary>
+            <returns>An queryable object of RegionModel, <see cref="T:QSS.eIQC.Handlers.Commands.RegionCommand.RegionModel"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.RegionODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a Region matching key 
+            </summary>
+            <param name="id">Takes input Region Id as a key</param>
+            <returns>An queryable object of RegionModel,  <see cref="T:QSS.eIQC.Handlers.Commands.RegionCommand.RegionModel"/></returns>
+        </member>
+        <member name="T:QSS.Controllers.RoleController">
+            <summary>
+            Role Controller provides Add, Update and Delete operations
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.RoleController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.RoleController},MediatR.IMediator)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of RoleController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+        </member>
+        <member name="M:QSS.Controllers.RoleController.Add(QSS.eIQC.Handlers.Commands.RoleCommand.Add.AddRoleModel)">
+            <summary>
+            Async POST Action method to Add new Role configuration
+            </summary>
+            <param name="request">Input parameter AddRoleModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.RoleCommand.Add.AddRoleModel"/></param>
+            <returns>If success should return newly added RoleModel <see cref="T:QSS.eIQC.Handlers.Commands.RoleCommand.RoleModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.RoleController.Update(System.Int32,QSS.eIQC.Handlers.Commands.RoleCommand.Update.UpdateRoleModel)">
+            <summary>
+            Async PUT Action method to update Role configuration
+            </summary>
+            <param name="id">Role Id as input in URL</param>
+            <param name="request">Input parameter UpdateRoleModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.RoleCommand.Update.UpdateRoleModel"/></param>
+            <returns>If success should return newly added RoleModel <see cref="T:QSS.eIQC.Handlers.Commands.RoleCommand.RoleModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.RoleController.Delete(QSS.eIQC.Handlers.Commands.RoleCommand.Delete.DeleteRoleModel)">
+            <summary>
+            Async DELETE Action method to delete Role configuration
+            </summary>
+            <param name="request">Input parameter DeleteRoleModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.RoleCommand.Delete.DeleteRoleModel"/></param>
+            <returns>If success should return newly added DeleteRoleResponse <see cref="T:QSS.eIQC.Handlers.Commands.RoleCommand.Delete.DeleteRoleResponse"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="T:QSS.Controllers.RoleODataController">
+            <summary>
+            Role Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.RoleODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.RoleODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.RoleODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.RoleODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.RoleODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of RoleODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.Controllers.RoleODataController.Get">
+            <summary>
+            OData api to retrieve a Role list
+            </summary>
+            <returns>An queryable object of RoleModel, <see cref="T:QSS.eIQC.Handlers.Commands.RoleCommand.RoleModel"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.RoleODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a Role matching key 
+            </summary>
+            <param name="id">Takes input Role Id as a key</param>
+            <returns>An queryable object of RoleModel,  <see cref="T:QSS.eIQC.Handlers.Commands.RoleCommand.RoleModel"/></returns>
+        </member>
+        <member name="T:QSS.Controllers.SiteCustomerODataController">
+            <summary>
+            SiteCustomer Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.SiteCustomerODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.SiteCustomerODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.SiteCustomerODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.SiteCustomerODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.SiteCustomerODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of SiteCustomerODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.Controllers.SiteCustomerODataController.Get">
+            <summary>
+            OData api to retrieve a SiteCustomer list
+            </summary>
+            <returns>An queryable object of SiteCustomerModel, <see cref="T:QSS.eIQC.Handlers.Commands.SiteCustomerCommand.SiteCustomerModel"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.SiteCustomerODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a SiteCustomer matching key 
+            </summary>
+            <param name="id">Takes input SiteCustomer Id as a key</param>
+            <returns>An queryable object of SiteCustomerModel,  <see cref="T:QSS.eIQC.Handlers.Commands.SiteCustomerCommand.SiteCustomerModel"/></returns>
+        </member>
+        <member name="T:QSS.Controllers.SiteODataController">
+            <summary>
+            Site Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.SiteODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.SiteODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.SiteODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.SiteODataController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.SiteODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of SiteODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:QSS.Controllers.SiteODataController.Get">
+            <summary>
+            OData api to retrieve a Site list
+            </summary>
+            <returns>An queryable object of SiteModel, <see cref="T:QSS.eIQC.Handlers.Commands.SiteCommand.SiteModel"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.SiteODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a Site matching key 
+            </summary>
+            <param name="id">Takes input Site Id as a key</param>
+            <returns>An queryable object of SiteModel,  <see cref="T:QSS.eIQC.Handlers.Commands.SiteCommand.SiteModel"/></returns>
+        </member>
+        <member name="T:QSS.Controllers.UserController">
+            <summary>
+            User Controller provides ADD, Update, Delete and SearchAD operations
+            </summary>
+        </member>
+        <member name="F:QSS.Controllers.UserController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="M:QSS.Controllers.UserController.#ctor(Microsoft.Extensions.Logging.ILogger{QSS.Controllers.UserController},MediatR.IMediator,QSS.Infrastructure.Core.Services.QSSGatewayAPI.IQSSGatewayAPIClient)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of UserController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="mediator">Injected instance of mediator on runtime, <see cref="T:MediatR.IMediator"/></param>
+            <param name="qssClient">API Gateway, <see cref="T:QSS.Infrastructure.Core.Services.QSSGatewayAPI.IQSSGatewayAPIClient"/></param>
+        </member>
+        <member name="M:QSS.Controllers.UserController.Add(QSS.eIQC.Handlers.Commands.UserCommand.Add.AddUserModel)">
+            <summary>
+            Async POST Action method to Add new User configuration
+            </summary>
+            <param name="request">Input parameter AddUserModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand.Add.AddUserModel"/></param>
+            <returns>If success should return newly added UserModel <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand._UserModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.UserController.Update(System.Int32,QSS.eIQC.Handlers.Commands.UserCommand.Update.UpdateUserModel)">
+            <summary>
+            Async PUT Action method to update User configuration
+            </summary>
+            <param name="id">User Id as input in URL</param>
+            <param name="request">Input parameter UpdateUserModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand.Update.UpdateUserModel"/></param>
+            <returns>If success should return newly added UserModel <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand._UserModel"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.UserController.Delete(QSS.eIQC.Handlers.Commands.UserCommand.Delete.DeleteUserModel)">
+            <summary>
+            Async DELETE Action method to delete User configuration
+            </summary>
+            <param name="request">Input parameter DeleteUserModel in a body, <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand.Delete.DeleteUserModel"/></param>
+            <returns>If success should return newly added DeleteUserResponse <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand.Delete.DeleteUserResponse"/> as IActionResult, <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/></returns>
+        </member>
+        <member name="M:QSS.Controllers.UserController.SearchBySamAccountOrName(System.String)">
+            <summary>
+            Async GET Action method to get user info from ActiveDirectory
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="T:QSS.Helpers.Filters.CustomODataDocumentFilter">
+            <summary>
+            CustomODataDocumentFilter: Creates a Filter to extract the OData Controllers Information
+            </summary>
+        </member>
+        <member name="F:QSS.Helpers.Filters.CustomODataDocumentFilter.xmlPath">
+            <summary>
+            The XML Comments Document Path
+            </summary>
+        </member>
+        <member name="M:QSS.Helpers.Filters.CustomODataDocumentFilter.#ctor(System.String)">
+            <summary>
+            Creates an Instance of <see cref="T:QSS.Helpers.Filters.CustomODataDocumentFilter"/>
+            </summary>
+            <param name="xmlCommentsFile">The Path for XMLCommentsFile </param>
+        </member>
+        <member name="M:QSS.Helpers.Filters.CustomODataDocumentFilter.GetSecurityForOperation(System.Reflection.MemberInfo)">
+            <summary>
+            The Document Filter <see cref="T:System.Collections.Generic.Dictionary`2"/>
+            </summary>
+            <param name="odataContoller">The Controller</param>
+            <returns><see cref="T:System.Collections.Generic.Dictionary`2"/></returns>
+        </member>
+        <member name="T:QSS.Helpers.Filters.GlobalExceptionFilter">
+            <summary>
+            The Global Exception Filter
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.Filters.IExceptionFilter" />
+        </member>
+        <member name="M:QSS.Helpers.Filters.GlobalExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            Called after an action has thrown the exception />.
+            </summary>
+            <param name="context">The Context.</param>
+        </member>
+        <member name="T:QSS.Helpers.Filters.UnitOfWorkFilter">
+            <summary>
+            Unit Of Work Action Filter
+            </summary>
+        </member>
+        <member name="F:QSS.Helpers.Filters.UnitOfWorkFilter._transaction">
+            <summary>
+            The Injected DBContext Transaction Interface
+            </summary>
+            <seealso cref="T:Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction"/>
+        </member>
+        <member name="M:QSS.Helpers.Filters.UnitOfWorkFilter.#ctor(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">
+            <summary>
+            Creates an instace of the <see cref="T:QSS.Helpers.Filters.UnitOfWorkFilter"/>
+            </summary>
+            <param name="transaction">The <see cref="T:Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction"/></param>
+        </member>
+        <member name="M:QSS.Helpers.Filters.UnitOfWorkFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            Execute the HTTP Request action and commits or roll back the transaction
+            </summary>
+            <param name="context">the <see cref="T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext"/></param>
+            <param name="next">the context <see cref="T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate"/></param>
+            <returns>The Task</returns>
+        </member>
+        <member name="T:QSS.Helpers.Http.BaseController">
+            <summary>
+            The Base Controller Class
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase"/>
+        </member>
+        <member name="F:QSS.Helpers.Http.BaseController._mediatr">
+            <summary>
+            The Mediatr Interface
+            </summary>
+        </member>
+        <member name="F:QSS.Helpers.Http.BaseController._logger">
+            <summary>
+            ILogger Interface
+            </summary>
+        </member>
+        <member name="M:QSS.Helpers.Http.BaseController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{QSS.Helpers.Http.BaseController})">
+            <summary>
+            The Base Controller Contructor
+            </summary>
+            <param name="mediatr">The <see cref="T:MediatR.IMediator"/></param>
+            <param name="logger">The <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+        </member>
+        <member name="M:QSS.Helpers.Http.BaseController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{QSS.Helpers.Http.BaseController},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            The Base Controller Contructor
+            </summary>
+            <param name="mediatr">The <see cref="T:MediatR.IMediator"/></param>
+            <param name="logger">The <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="httpContextAccessor">The <see cref="T:Microsoft.AspNetCore.Http.IHttpContextAccessor"/></param>
+        </member>
+        <member name="M:QSS.Helpers.Http.BaseController.ExecuteMediatrRequest``1(MediatR.IRequest{``0})">
+            <summary>
+            Executes a Mediatr Requests and Handles the response or any exceptions may happen
+            </summary>
+            <typeparam name="T">Class Type</typeparam>
+            <param name="request">Request of Type Class</param>
+            <returns></returns>
+        </member>
+        <member name="M:QSS.Helpers.Http.BaseController.ExceptionResponse``1(System.Exception)">
+            <summary>
+            Exceptions the response.
+            </summary>
+            <typeparam name="T">T Class</typeparam>
+            <param name="ex">The ex.</param>
+            <returns>
+            The IActionResult
+            </returns>
+        </member>
+        <member name="M:QSS.Helpers.Http.BaseController.CreateResponse``1(System.Exception,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            Creates the response.
+            </summary>
+            <typeparam name="T"> The generic type</typeparam>
+            <param name="ex">Exception</param>
+            <param name="statusCode">The status code.</param>
+            <param name="message">The message.</param>
+            <param name="errorcode">The error code.</param>
+            <param name="status">The status.</param>
+            <returns>
+            The ObjectResult
+            </returns>
+        </member>
+        <member name="T:QSS.Http.ErrorCode">
+            <summary>
+            The Error Code
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.NullReference">
+            <summary>
+            The null reference
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.NullServiceEndpoint">
+            <summary>
+            The null service endpoint
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.InternalServerError">
+            <summary>
+            The internal server error
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.InputValuesNotGood">
+            <summary>
+            The input values not good
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.NotFound">
+            <summary>
+            The not found
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.BadRequest">
+            <summary>
+            The bad request
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.InvalidAction">
+            <summary>
+            The invalid action
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.MaximumBakeCycleReached">
+            <summary>
+            The maximum bake cycle reached
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.MinimumBakeTime">
+            <summary>
+            The minimum bake time
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.MaximumBakeTimeReached">
+            <summary>
+            The maximum bake time reached
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.KeyAlreadyExists">
+            <summary>
+            The key already exists
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ErrorCode.UnableToDelete">
+            <summary>
+            Unable to delete as violates ForeignKey rule
+            </summary>
+        </member>
+        <member name="T:QSS.Http.ResponsePayload`1">
+            <summary>
+            The Response Payload class
+            </summary>
+            <typeparam name="T">The generic type parameter.</typeparam>
+        </member>
+        <member name="P:QSS.Http.ResponsePayload`1.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="P:QSS.Http.ResponsePayload`1.Status">
+            <summary>
+            Gets or sets the status.
+            </summary>
+            <value>
+            The status.
+            </value>
+        </member>
+        <member name="P:QSS.Http.ResponsePayload`1.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>
+            The message.
+            </value>
+        </member>
+        <member name="P:QSS.Http.ResponsePayload`1.ErrorCode">
+            <summary>
+            Gets or sets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="T:QSS.Http.ResponseStatus">
+            <summary>
+            The Response Status
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ResponseStatus.Success">
+            <summary>
+            The success
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ResponseStatus.Failed">
+            <summary>
+            The failed
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ResponseStatus.NotFound">
+            <summary>
+            The not found
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ResponseStatus.BadRequest">
+            <summary>
+            The bad request
+            </summary>
+        </member>
+        <member name="F:QSS.Http.ResponseStatus.InvalidAction">
+            <summary>
+            The invalid action
+            </summary>
+        </member>
+        <member name="F:QSS.Program.configuration">
+            <summary>
+            App settings
+            </summary>
+        </member>
+        <member name="T:QSS.Security.PermissionHandler">
+            <summary>
+            Validate user permission to certificate if the user is able to perform specific action
+            </summary>
+        </member>
+        <member name="M:QSS.Security.PermissionHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,QSS.Security.PermissionRequirement)">
+            <summary>
+            Validate user permission to certificate if the user is able to perform specific action
+            </summary>
+            <param name="context">database context<see cref="T:Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext"/></param>
+            <param name="requirement">requirement to satisfy<see cref="T:QSS.Security.PermissionRequirement"/></param>
+            <returns>Validation</returns>
+        </member>
+        <member name="T:QSS.Startup">
+            <summary>
+            App configuration
+            </summary>
+        </member>
+        <member name="F:QSS.Startup.ApiTitle">
+            <summary>
+            API Title
+            </summary>
+        </member>
+        <member name="F:QSS.Startup.ApiVersion">
+            <summary>
+            API version value
+            </summary>
+        </member>
+        <member name="F:QSS.Startup._configuration">
+            <summary>
+                Gets or sets the configuration.
+            </summary>
+            <value>
+                The configuration.
+            </value>
+        </member>
+        <member name="F:QSS.Startup._connectionStrings">
+            <summary>
+            The ConnectionStrings Options snapshot
+            </summary>
+        </member>
+        <member name="M:QSS.Startup.ConfigureConfigSettings(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure all options mapped from app settings
+            </summary>
+            <param name="services">app services</param>
+        </member>
+        <member name="M:QSS.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline. 
+            </summary>
+            <param name="app">Application builder DI</param>
+            <param name="env">Environment DI</param>
+        </member>
+        <member name="M:QSS.Startup.SetOutputFormatters(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Set formatter to support JSON/ODATA formats
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:iFactory.DataMigration.API.Controllers.UserODataController">
+            <summary>
+            Department Configurations OData controller
+            </summary>
+        </member>
+        <member name="F:iFactory.DataMigration.API.Controllers.UserODataController._logger">
+            <summary>
+            Store ILogger, <see cref="T:Microsoft.Extensions.Logging.ILogger"/>
+            </summary>
+        </member>
+        <member name="F:iFactory.DataMigration.API.Controllers.UserODataController._context">
+            <summary>
+            Store IQSSContext, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/>
+            </summary>
+        </member>
+        <member name="F:iFactory.DataMigration.API.Controllers.UserODataController._mapper">
+            <summary>
+            Store IMapper, <see cref="T:AutoMapper.IMapper"/>
+            </summary>
+        </member>
+        <member name="M:iFactory.DataMigration.API.Controllers.UserODataController.#ctor(Microsoft.Extensions.Logging.ILogger{iFactory.DataMigration.API.Controllers.UserODataController},QSS.eIQC.DataAccess.DataContext.IQSSContext,AutoMapper.IMapper)">
+            <summary>
+            Constructor to bootstrap private members
+            </summary>
+            <param name="logger">Injected instance of ILogger of DepartmentODataController on runtime, <see cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="context">Injected instance of IQSSContext on runtime, <see cref="T:QSS.eIQC.DataAccess.DataContext.IQSSContext"/></param>
+            <param name="mapper">Injected instance of IMapper on runtime, <see cref="T:AutoMapper.IMapper"/></param>
+        </member>
+        <member name="M:iFactory.DataMigration.API.Controllers.UserODataController.Get">
+            <summary>
+            OData api to retrieve a User list
+            </summary>
+            <returns>An queryable object of _UserModel, <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand._UserModel"/></returns>
+        </member>
+        <member name="M:iFactory.DataMigration.API.Controllers.UserODataController.Get(System.Int32)">
+            <summary>
+            OData api to return a collection of users that matches with the input
+            </summary>
+            <param name="id">Takes input id as a key</param>
+            <returns>An queryable object of _UserModel,  <see cref="T:QSS.eIQC.Handlers.Commands.UserCommand._UserModel"/></returns>
+        </member>
+    </members>
+</doc>

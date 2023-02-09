@@ -1,0 +1,12 @@
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\bin\Debug\netstandard2.1\QSS.eIQC.Domain.deps.json
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\bin\Debug\netstandard2.1\QSS.eIQC.Domain.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\bin\Debug\netstandard2.1\QSS.eIQC.Domain.pdb
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\bin\Debug\netstandard2.1\QSS.eIQC.Utilities.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\bin\Debug\netstandard2.1\QSS.eIQC.Utilities.pdb
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\obj\Debug\netstandard2.1\QSS.eIQC.Domain.csprojAssemblyReference.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\obj\Debug\netstandard2.1\QSS.eIQC.Domain.AssemblyInfoInputs.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\obj\Debug\netstandard2.1\QSS.eIQC.Domain.AssemblyInfo.cs
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\obj\Debug\netstandard2.1\QSS.eIQC.Domain.csproj.CoreCompileInputs.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\obj\Debug\netstandard2.1\QSS.eIQC.Domain.csproj.CopyComplete
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\obj\Debug\netstandard2.1\QSS.eIQC.Domain.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.Domain\obj\Debug\netstandard2.1\QSS.eIQC.Domain.pdb

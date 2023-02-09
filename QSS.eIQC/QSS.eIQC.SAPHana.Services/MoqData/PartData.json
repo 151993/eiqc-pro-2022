@@ -1,0 +1,244 @@
+[
+  {
+    "Id": "1",
+    "partNo": "TG-ME-600008",
+    "partDescription": "Test Part 02",
+    "site": "Site CN01",
+    "commodity": "Metal",
+    "mpnMaterial": "AL062342-000-B1",
+    "mediacode": "BULK",
+    "maskedMPN": "AL062342-000-B1",
+    "manufacturer": "SHENNANCIR",
+    "vendor": "PENCOM LIMITED",
+    "suppliername": "PENCOM LIMITED",
+    "supplierphonenumber": "+60146243709",
+    "supplieremail": "pencom@gmaiul.com",
+    "jabilownercontact": "Amol",
+    "isEnabled": true,
+    "samplingPlans": [
+      {
+        "mstrChar": "DIM",
+        "smplProc": "F5",
+        "site": "MY01",
+        "certificateType" : "0006"
+      },
+      {
+        "mstrChar": "FUN",
+        "smplProc": "F5",
+        "site": "MY01",
+        "certificateType": "0006"
+      },
+      {
+        "mstrChar": "VIS",
+        "smplProc": "Incoming",
+        "site": "MY01",
+        "certificateType": "0006"
+      }
+    ],
+    "PartManufacturePartNumbers": [
+      {
+        "isEnabled": true,
+        "MPN": "0402B104K160CT"
+      },
+      {
+        "isEnabled": true,
+        "MPN": "CC0402KRX7R9BB561"
+      },
+      {
+        "isEnabled": true,
+        "MPN": "008E09080-LF"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "partNo": "0161-1254-LF",
+    "partDescription": "Test Part 01",
+    "site": "site CN02",
+    "commodity": "PCB",
+    "mpnMaterial": "293D106X0020C2TE3",
+    "mediacode": "REEL",
+    "maskedMPN": "293D106X0020C2TE3",
+    "manufacturer": "VISHAY",
+    "vendor": "FUTURE ELECTRONICS INC.",
+    "suppliername": "FUTURE ELECTRONICS INC.",
+    "supplierphonenumber": "+60146244709",
+    "supplieremail": "future@gmail.com",
+    "jabilownercontact": "Alok",
+    "isEnabled": true,
+    "samplingPlans": [
+      {
+        "mstrChar": "DIM",
+        "smplProc": "F5",
+        "site": "MY01",
+        "certificateType": "0006"
+      },
+      {
+        "mstrChar": "VIS",
+        "smplProc": "Incoming",
+        "site": "MY01",
+        "certificateType": "0006"
+      }
+    ],
+    "PartManufacturePartNumbers": [
+      {
+        "isEnabled": true,
+        "MPN": "0402X104K100CT"
+      },
+      {
+        "isEnabled": true,
+        "MPN": "CL10B104KO8NNNC"
+      },
+      {
+        "isEnabled": true,
+        "MPN": "DE2B3KY151KA3BM02F"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "partNo": "CM-432-16029-3-LF",
+    "partDescription": "Test Part 03",
+    "site": "Site CN03",
+    "commodity": "PCB",
+    "mpnMaterial": "70V25S25PFGI8",
+    "mediacode": "REEL",
+    "maskedMPN": "70V25S25PFGI8",
+    "manufacturer": "INTDEVTECH",
+    "vendor": "LTD",
+    "suppliername": "LTD",
+    "supplierphonenumber": "+6018678906",
+    "supplieremail": "ltd@gmail.com",
+    "jabilownercontact": "Viknes",
+    "isEnabled": true,
+    "samplingPlans": [
+      {
+        "mstrChar": "DIM",
+        "smplProc": "F5",
+        "site": "MY01",
+        "certificateType": "0007"
+      }
+    ],
+    "PartManufacturePartNumbers": [
+      {
+        "isEnabled": true,
+        "MPN": "6090830"
+      },
+      {
+        "isEnabled": true,
+        "MPN": "WR02X54R9FTL"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "partNo": "P1049330",
+    "partDescription": "Test Part 04",
+    "site": "Site CN04",
+    "commodity": "Metal",
+    "mpnMaterial": "TMS320F2812PGFA",
+    "mediacode": "REEL",
+    "maskedMPN": "TMS320F2812PGFA",
+    "manufacturer": "TEXASINSTR",
+    "vendor": "HJK Electronic Sdn Bhd",
+    "suppliername": "Mohd. Aloi",
+    "supplierphonenumber": "+6017654356",
+    "supplieremail": "hjk@gmail.com",
+    "jabilownercontact": "Wani",
+    "isEnabled": true,
+    "samplingPlans": [
+      {
+        "mstrChar": "FUN",
+        "smplProc": "F5",
+        "site": "MY01",
+        "certificateType": "0006"
+      },
+      {
+        "mstrChar": "VIS",
+        "smplProc": "Incoming",
+        "site": "MY01",
+        "certificateType": "0006"
+      }
+    ],
+    "PartManufacturePartNumbers": [
+      {
+        "isEnabled": true,
+        "MPN": "WR04X472 JTL"
+      },
+      {
+        "isEnabled": true,
+        "MPN": "RC0603FR-0728R7L"
+      }
+    ]
+  },
+  {
+    "Id": "5",
+    "partNo": "P1024194-LF",
+    "partDescription": "Test Part 05",
+    "site": "Site CN05",
+    "commodity": "PCB",
+    "mpnMaterial": "AL062342-001-AB0",
+    "mediacode": "BULK",
+    "maskedMPN": "AL062342-001-AB0",
+    "manufacturer": "VISHAY",
+    "vendor": "VISHAY",
+    "suppliername": "Vishay",
+    "supplierphonenumber": "+0145678290",
+    "supplieremail": "vishay@gmail.com",
+    "jabilownercontact": "Sandip",
+    "isEnabled": true,
+    "samplingPlans": [
+      {
+        "mstrChar": "VIS",
+        "smplProc": "Incoming",
+        "site": "MY01",
+        "certificateType": "0008"
+      }
+    ],
+    "PartManufacturePartNumbers": [
+      {
+        "isEnabled": true,
+        "MPN": "102267-001"
+      },
+      {
+        "isEnabled": true,
+        "MPN": "105227B-1717"
+      }
+    ]
+  },
+  {
+    "Id": "6",
+    "partNo": "A1826-2772",
+    "partDescription": "Test Part 6",
+    "site": "Site CN06",
+    "commodity": "PCB",
+    "mpnMaterial": "MPN-290543",
+    "mediacode": "BULK",
+    "maskedMPN": "MPN-290543",
+    "manufacturer": "ONSEMICON",
+    "vendor": "ONSEMICON",
+    "suppliername": "ONSEMICON",
+    "supplierphonenumber": "+0145678290",
+    "supplieremail": "ONSEMICON@gmail.com",
+    "jabilownercontact": "Sandip",
+    "isEnabled": true,
+    "samplingPlans": [
+      {
+        "mstrChar": "VIS",
+        "smplProc": "Incoming",
+        "site": "MY01",
+        "certificateType": "0008"
+      }
+    ],
+    "PartManufacturePartNumbers": [
+      {
+        "isEnabled": true,
+        "MPN": "LM337D2TR4"
+      },
+      {
+        "isEnabled": true,
+        "MPN": "1826-2772"
+      }
+    ]
+  }
+]

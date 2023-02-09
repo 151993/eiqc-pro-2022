@@ -1,0 +1,17 @@
+# Stage 1
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+WORKDIR /app
+
+COPY . ./
+RUN pwd
+RUN ls -l
+# RUN dotnet restore
+#RUN dotnet publish QSS.Api -c Release -o out
+RUN dotnet publish -c Release -o api
+
+# Stage 2
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS final
+WORKDIR /app
+COPY --from=build /app/QSS.Api/out .
+ENTRYPOINT ["dotnet", "QSS.Api.dll"]
+

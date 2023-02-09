@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4CjdjHj7Tm9bCuduGTgZmAF2BaDJuNi9hp5/P52zll2MEVrcYdLu8wIRjV1zButriraEdzkS0VS6+3zJ2EkG2Q==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\nuget\\global-packages\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

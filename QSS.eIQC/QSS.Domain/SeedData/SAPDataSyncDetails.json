@@ -1,0 +1,27 @@
+﻿[
+  {
+    "SAPDataSyncDetailsId": 1,
+    "name": "1",
+    "LastSyncDate": "2000-01-01T00:00:00.462959Z"
+  },
+  {
+    "SAPDataSyncDetailsId": 2,
+    "name": "2",
+    "LastSyncDate": "2000-01-01T00:00:00.462959Z"
+  },
+  {
+    "SAPDataSyncDetailsId": 3,
+    "name": "3",
+    "LastSyncDate": "2000-01-01T00:00:00.462959Z"
+  },
+  {
+    "SAPDataSyncDetailsId": 4,
+    "name": "4",
+    "LastSyncDate": "2000-01-01T00:00:00.462959Z"
+  },
+  {
+    "SAPDataSyncDetailsId": 5,
+    "name": "5",
+    "LastSyncDate": "2000-01-01T00:00:00.462959Z"
+  }
+]  

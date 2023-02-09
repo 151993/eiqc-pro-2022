@@ -1,0 +1,17 @@
+﻿[
+  {
+    "Id": 1,
+    "ParameterName": "Media Code",
+    "CertificateTypeId": "1"
+  },
+  {
+    "Id": 2,
+    "ParameterName": "MFG",
+    "CertificateTypeId": "1"
+  },
+  {
+    "Id": 3,
+    "ParameterName": "MPN",
+    "CertificateTypeId": "1"
+  }
+]

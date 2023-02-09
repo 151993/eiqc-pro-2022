@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema Namespace="production.pu.XS_PU_PARTNUMBER_SITE_MANUF" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="PARTNUMBER_BY_SITEType">
+				<Key>
+					<PropertyRef Name="ID" />
+				</Key>
+				<Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="40" />
+				<Property Name="SITE" Type="Edm.String" MaxLength="4" />
+				<Property Name="JABIL_PART_NO" Type="Edm.String" MaxLength="40" />
+				<Property Name="MPN_MTRL_HERS" Type="Edm.String" MaxLength="40" />
+				<Property Name="MANUFACTURER" Type="Edm.String" MaxLength="10" />
+				<Property Name="PART_VALID_FROM" Type="Edm.String" MaxLength="8" />
+				<Property Name="PART_VALID_TO" Type="Edm.String" MaxLength="8" />
+				<Property Name="MEDIACODE" Type="Edm.String" MaxLength="4" />
+				<Property Name="MANUF_PART_NO" Type="Edm.String" MaxLength="40" />
+				<Property Name="MASKED_MPN" Type="Edm.String" MaxLength="40" />
+				<Property Name="MATERIAL_DESC" Type="Edm.String" MaxLength="40" />
+				<Property Name="JABIL_OWNER_CONTACT" Type="Edm.String" MaxLength="18" />
+				<Property Name="MATERIAL_GROUP" Type="Edm.String" MaxLength="9" />
+				<Property Name="CREATED_DATE" Type="Edm.String" MaxLength="8" />
+				<Property Name="LAST_MODIFIED_DATE" Type="Edm.String" MaxLength="8" />
+			</EntityType>
+			<EntityContainer Name="XS_PU_PARTNUMBER_SITE_MANUF" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="PARTNUMBER_BY_SITE" EntityType="production.pu.XS_PU_PARTNUMBER_SITE_MANUF.PARTNUMBER_BY_SITEType" />
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

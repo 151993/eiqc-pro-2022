@@ -1,0 +1,12 @@
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\obj\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.csprojAssemblyReference.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\obj\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.AssemblyInfoInputs.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\obj\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.AssemblyInfo.cs
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\obj\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.csproj.CoreCompileInputs.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\bin\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.deps.json
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\bin\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\bin\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.pdb
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\bin\Debug\netcoreapp3.1\QSS.eIQC.Domain.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\bin\Debug\netcoreapp3.1\QSS.eIQC.Domain.pdb
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\obj\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.csproj.CopyComplete
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\obj\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.eIQC.SAPHana.MockServices\obj\Debug\netcoreapp3.1\QSS.eIQC.SAPHana.MockServices.pdb

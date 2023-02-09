@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+        <Schema Namespace="production.pu.XS_PU_SAMPLESIZECALC" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="SAMPLESIZECALCType">
+                <Key>
+                    <PropertyRef Name="ID" />
+                </Key>
+                <Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="40" />
+                <Property Name="PART_NO" Type="Edm.String" MaxLength="40" />
+                <Property Name="PLAN_TYPE" Type="Edm.String" MaxLength="1" />
+                <Property Name="GRP_NO" Type="Edm.String" MaxLength="8" />
+                <Property Name="GRP_COUNTER" Type="Edm.String" MaxLength="2" />
+                <Property Name="COUNTER_ADD" Type="Edm.String" MaxLength="7" />
+                <Property Name="COUNTER" Type="Edm.String" MaxLength="8" />
+                <Property Name="SITE" Type="Edm.String" MaxLength="4" />
+                <Property Name="QDMR" Type="Edm.String" MaxLength="3" />
+                <Property Name="DMR" Type="Edm.String" MaxLength="3" />
+                <Property Name="SMPL_PROC" Type="Edm.String" MaxLength="8" />
+                <Property Name="DELETE_IND" Type="Edm.String" MaxLength="1" />
+                <Property Name="INSP_CHAR" Type="Edm.String" MaxLength="4" />
+                <Property Name="INSP_METHOD" Type="Edm.String" MaxLength="8" />
+                <Property Name="METHOD_VER" Type="Edm.String" MaxLength="6" />
+                <Property Name="METHOD_SITE" Type="Edm.String" MaxLength="4" />
+                <Property Name="MSTR_INSP_CHAR" Type="Edm.String" MaxLength="8" />
+                <Property Name="MSTR_VER" Type="Edm.String" MaxLength="6" />
+                <Property Name="SMPL_SIZE" Type="Edm.String" MaxLength="20" />
+                <Property Name="SMPL_TYPE" Type="Edm.String" MaxLength="3" />
+                <Property Name="VALUATION_MODE" Type="Edm.String" MaxLength="3" />
+                <Property Name="SMPL_SCHEME" Type="Edm.String" MaxLength="3" />
+                <Property Name="INSP_SEV" Type="Edm.String" MaxLength="3" />
+                <Property Name="NO_USE_IP" Type="Edm.String" MaxLength="1" />
+                <Property Name="USE_IP" Type="Edm.String" MaxLength="1" />
+                <Property Name="DETERMINE_KEY" Type="Edm.String" MaxLength="2" />
+                <Property Name="QD_SHORT_TEXT" Type="Edm.String" MaxLength="50" />
+                <Property Name="CREATED_ON" Type="Edm.String" MaxLength="10" />
+                <Property Name="CHANGED_ON" Type="Edm.String" MaxLength="10" />
+                <Property Name="SEQ_CTR_IT_SCHEME" Type="Edm.String" MaxLength="20" />
+                <Property Name="SEQ_CTR_SI_SCHEME" Type="Edm.String" MaxLength="20" />
+                <Property Name="NO_SMPL_SIZE" Type="Edm.String" MaxLength="20" />
+                <Property Name="LOT_SIZE" Type="Edm.String" MaxLength="20" />
+                <Property Name="ACPT_NO" Type="Edm.String" MaxLength="20" />
+                <Property Name="REJ_NO" Type="Edm.String" MaxLength="20" />
+                <Property Name="QDPA_INSP_SEV" Type="Edm.String" MaxLength="3" />
+                <Property Name="QDPS_INSP_SEV" Type="Edm.String" MaxLength="3" />
+                <Property Name="INSP_STAGE" Type="Edm.String" MaxLength="4" />
+                <Property Name="NEW_INSP_STG_OK" Type="Edm.String" MaxLength="4" />
+                <Property Name="NEW_INSP_STG_NOK" Type="Edm.String" MaxLength="4" />
+                <Property Name="QDDR_DMR" Type="Edm.String" MaxLength="3" />
+                <Property Name="INIT_INSP_STAGE" Type="Edm.String" MaxLength="4" />
+                <Property Name="QDQL_SEQ_CTR" Type="Edm.String" MaxLength="20" />
+                <Property Name="QDQL_DMR" Type="Edm.String" MaxLength="3" />
+                <Property Name="NEXT_INSP_STAGE" Type="Edm.String" MaxLength="4" />
+                <Property Name="VENDOR_CODE" Type="Edm.String" MaxLength="10" />
+            </EntityType>
+            <EntityType Name="InputParamsType">
+                <Key>
+                    <PropertyRef Name="IP_SITE" />
+                    <PropertyRef Name="IP_PARTNO" />
+                    <PropertyRef Name="IP_VENDOR" />
+                </Key>
+                <Property Name="IP_SITE" Type="Edm.String" Nullable="false" DefaultValue="CN02" MaxLength="4" />
+                <Property Name="IP_PARTNO" Type="Edm.String" Nullable="false" DefaultValue="~PartNumber1~PartNumber2~PartNumberN~" MaxLength="1000" />
+                <Property Name="IP_VENDOR" Type="Edm.String" Nullable="false" DefaultValue="VendorCode" MaxLength="10" />
+                <NavigationProperty Name="SAMPLESIZECALC" Relationship="production.pu.XS_PU_SAMPLESIZECALC.InputParams_SAMPLESIZECALCType" FromRole="InputParamsPrincipal" ToRole="SAMPLESIZECALCDependent" />
+            </EntityType>
+            <Association Name="InputParams_SAMPLESIZECALCType">
+                <End Type="production.pu.XS_PU_SAMPLESIZECALC.InputParamsType" Role="InputParamsPrincipal" Multiplicity="*"/>
+                <End Type="production.pu.XS_PU_SAMPLESIZECALC.SAMPLESIZECALCType" Role="SAMPLESIZECALCDependent" Multiplicity="*"/>
+            </Association>
+            <EntityContainer Name="XS_PU_SAMPLESIZECALC" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="SAMPLESIZECALC" EntityType="production.pu.XS_PU_SAMPLESIZECALC.SAMPLESIZECALCType" />
+                <EntitySet Name="InputParams" EntityType="production.pu.XS_PU_SAMPLESIZECALC.InputParamsType" />
+                <AssociationSet Name="InputParams_SAMPLESIZECALC" Association="production.pu.XS_PU_SAMPLESIZECALC.InputParams_SAMPLESIZECALCType">
+                    <End Role="InputParamsPrincipal" EntitySet="InputParams"/>
+                    <End Role="SAMPLESIZECALCDependent" EntitySet="SAMPLESIZECALC"/>
+                </AssociationSet>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

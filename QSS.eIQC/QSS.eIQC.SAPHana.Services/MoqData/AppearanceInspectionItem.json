@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "IsEnabled": true,
+    "Intchar": "RESPAC", //AppearanceInspectionItem
+    "ToleranceFrom": "0.1234",
+    "ToleranceTo": "0.2345"
+  },
+  {
+    "Id": 2,
+    "IsEnabled": true,
+    "Intchar": "LOGPAC", //Commodity_id
+    "ToleranceFrom": "0.2234", //Commodity Valid From
+    "ToleranceTo": "0.3345" //Commodity Valid To
+  }
+  ]

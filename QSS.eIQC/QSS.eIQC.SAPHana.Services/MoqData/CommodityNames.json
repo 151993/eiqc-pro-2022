@@ -1,0 +1,123 @@
+[
+  {
+    "Id": 1,
+    "IsEnabled": true,
+    "IntClassNo": "357", //Commodity_id
+    "Class": "ASIC", //Commodity_name
+    "ValidFrom": "04/23/2016", //Commodity Valid From
+    "ValidTo": "04/25/2019" //Commodity Valid To
+
+  },
+  {
+    "Id": 2,
+    "IsEnabled": true,
+    "IntClassNo": "358",
+    "Class": "CABLE",
+    "ValidFrom": "06/17/2016",
+    "ValidTo": "12/31/2019"
+  },
+  {
+    "Id": 3,
+    "IsEnabled": true,
+    "IntClassNo": "359",
+    "Class": "CAPACITOR",
+    "ValidFrom": "06/11/2016",
+    "ValidTo": "12/12/2019"
+  },
+  {
+    "Id": 4,
+    "IsEnabled": true,
+    "IntClassNo": "360",
+    "Class": "CHIPSET",
+    "ValidFrom": "06/05/2016",
+    "ValidTo": "12/05/2019"
+  },
+  {
+    "Id": 5,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "CONNECTOR",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2019"
+  },
+  {
+    "Id": 6,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "PCB",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 7,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "PWB",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 8,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "Electronic",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 9,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "Plastic",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 10,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "Metal",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 11,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "Label",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 12,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "Packing",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 13,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "PCBA",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 14,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "FPC",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  },
+  {
+    "Id": 15,
+    "IsEnabled": true,
+    "IntClassNo": "361",
+    "Class": "Other",
+    "ValidFrom": "06/06/2016",
+    "ValidTo": "12/06/2023"
+  }
+]

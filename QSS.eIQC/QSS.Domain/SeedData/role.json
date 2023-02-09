@@ -1,0 +1,10 @@
+﻿[
+  {
+    "Id": 1,
+    "name": "Admin"
+  },
+  {
+    "Id": 2,
+    "name": "DefaultAccess"
+  }
+]  

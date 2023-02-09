@@ -1,0 +1,16 @@
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.DataAccess.deps.json
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.DataAccess.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.DataAccess.pdb
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.Domain.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.Infrastucture.Core.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.Utilities.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.Domain.pdb
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.Infrastucture.Core.pdb
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\bin\Debug\netstandard2.1\QSS.eIQC.Utilities.pdb
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\obj\Debug\netstandard2.1\QSS.eIQC.DataAccess.csprojAssemblyReference.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\obj\Debug\netstandard2.1\QSS.eIQC.DataAccess.AssemblyInfoInputs.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\obj\Debug\netstandard2.1\QSS.eIQC.DataAccess.AssemblyInfo.cs
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\obj\Debug\netstandard2.1\QSS.eIQC.DataAccess.csproj.CoreCompileInputs.cache
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\obj\Debug\netstandard2.1\QSS.eIQC.DataAccess.csproj.CopyComplete
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\obj\Debug\netstandard2.1\QSS.eIQC.DataAccess.dll
+E:\Projects\EIQC\Api\QSS.eIQC\QSS.DataAccess\obj\Debug\netstandard2.1\QSS.eIQC.DataAccess.pdb

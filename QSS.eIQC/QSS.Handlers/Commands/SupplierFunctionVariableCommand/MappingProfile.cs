@@ -1,0 +1,24 @@
+﻿/* Auto Generated Code By AutoCodeGen Jabil © 2019 */
+
+
+using AutoMapper;
+using QSS.eIQC.Domain.Models;
+using System.Linq;
+
+namespace QSS.eIQC.Handlers.Commands.SupplierFunctionVariableCommand
+{
+    public class MappingProfile : Profile
+    {
+        /// <summary>
+        /// Bootstraps the mapping of base Role models
+        /// </summary>
+        public MappingProfile()
+        {
+            CreateMap<SupplierFunctionVariableModel, SupplierFunctionVariable>()
+                .ForMember(dest => dest.SupplierFunctionVariableActuals, opt => opt.ExplicitExpansion());
+
+            CreateMap<SupplierFunctionVariable, SupplierFunctionVariableModel>()
+                .ForMember(dest => dest.SupplierFunctionVariableActuals, opt => opt.ExplicitExpansion());
+        }
+    }
+}

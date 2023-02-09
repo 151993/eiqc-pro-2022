@@ -1,0 +1,45 @@
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="SAPHana.Model" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityType Name="JCASVendorModel">
+        <Key>
+          <PropertyRef Name="JCASVendorId" />
+        </Key>
+        <Property Name="JCASVendorId" Type="Edm.String" Nullable="false" />
+        <Property Name="VENDORCODE" Type="Edm.String" />
+        <Property Name="VENDORNAME" Type="Edm.String" />
+        <Property Name="DELETEFLAG" Type="Edm.String" />
+        <Property Name="KTOKK" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="JCASMPNModel">
+        <Key>
+          <PropertyRef Name="JCASMPNId" />
+        </Key>
+        <Property Name="JCASMPNId" Type="Edm.String" Nullable="false" />
+        <Property Name="MFRPARTID" Type="Edm.Int32" />
+        <Property Name="MFRPARTCODE" Type="Edm.String" />
+        <Property Name="AMLREFERENCE" Type="Edm.String" />
+        <Property Name="CORPORATIONID" Type="Edm.Int32" />
+        <Property Name="CORPORATIONNAME" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="SitePartModel">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.String" Nullable="false" />
+        <Property Name="SITECODE" Type="Edm.String" />
+        <Property Name="SITEPARTCODE" Type="Edm.String" />
+        <Property Name="SITEPARTTYPECODE" Type="Edm.String" />
+        <Property Name="SITEPARTDESCRIPTION" Type="Edm.String" />
+        <Property Name="LOTSIZECODE" Type="Edm.String" />
+      </EntityType>
+    </Schema>
+    <Schema Namespace="Default" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="Container">
+        <EntitySet Name="JCASVendor" EntityType="SAPHana.Model.JCASVendorModel" />
+        <EntitySet Name="JCASMPN" EntityType="SAPHana.Model.JCASMPNModel" />
+        <EntitySet Name="SitePart" EntityType="SAPHana.Model.SitePartModel" />
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

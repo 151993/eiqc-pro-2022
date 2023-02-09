@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+    <Schema Namespace="production.pu.XS_PU_EIQC_SUPPLIER" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="SUPPLIERType">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="SITE_NAME" Type="Edm.String" MaxLength="30" />
+        <Property Name="SITE_CODE" Type="Edm.String" MaxLength="4" />
+        <Property Name="EMAIL" Type="Edm.String" MaxLength="241" />
+        <Property Name="PHONE_NO" Type="Edm.String" MaxLength="16" />
+        <Property Name="FAX_NO" Type="Edm.String" MaxLength="31" />
+        <Property Name="VENDOR_CODE" Type="Edm.String" MaxLength="10" />
+        <Property Name="VENDOR_NAME" Type="Edm.String" MaxLength="35" />
+        <Property Name="VENDOR_NAME2" Type="Edm.String" MaxLength="35" />
+        <Property Name="VENDOR_NAME3" Type="Edm.String" MaxLength="35" />
+        <Property Name="VENDOR_NAME4" Type="Edm.String" MaxLength="35" />
+        <Property Name="IC_SITE" Type="Edm.String" MaxLength="4" />
+        <Property Name="VENDOR_ACCT_GRP" Type="Edm.String" MaxLength="4" />
+        <Property Name="PURCHASE_ORG" Type="Edm.String" MaxLength="4" />
+        <Property Name="SALES_ORG_POC" Type="Edm.String" MaxLength="30" />
+        <Property Name="COMPANY_CODE" Type="Edm.String" MaxLength="4" />
+        <Property Name="VALUATION_AREA" Type="Edm.String" MaxLength="4" />
+        <Property Name="IC_VENDOR_OF_PLANT" Type="Edm.String" MaxLength="10" />
+        <Property Name="CREATED_DATE" Type="Edm.String" MaxLength="10" />
+        <Property Name="ADDRESS_NO" Type="Edm.String" MaxLength="10" />
+        <Property Name="STREET_NO" Type="Edm.String" MaxLength="60" />
+        <Property Name="CITY" Type="Edm.String" MaxLength="40" />
+        <Property Name="POSTAL_CODE" Type="Edm.String" MaxLength="10" />
+        <Property Name="COUNTRY" Type="Edm.String" MaxLength="3" />
+        <Property Name="REGION" Type="Edm.String" MaxLength="3" />
+        <Property Name="LAND_CODE" Type="Edm.String" MaxLength="3" />
+        <Property Name="STATUS" Type="Edm.String" MaxLength="1" />
+        <Property Name="SEARCH_TERM" Type="Edm.String" MaxLength="10" />
+      </EntityType>
+      <EntityType Name="InputParamsType">
+        <Key>
+          <PropertyRef Name="IP_SITE" />
+        </Key>
+        <Property Name="IP_SITE" Type="Edm.String" Nullable="false" DefaultValue="Site" MaxLength="4" />
+        <NavigationProperty Name="SUPPLIER" Relationship="production.pu.XS_PU_EIQC_SUPPLIER.InputParams_SUPPLIERType" FromRole="InputParamsPrincipal" ToRole="SUPPLIERDependent" />
+      </EntityType>
+      <Association Name="InputParams_SUPPLIERType">
+        <End Type="production.pu.XS_PU_EIQC_SUPPLIER.InputParamsType" Role="InputParamsPrincipal" Multiplicity="*"/>
+        <End Type="production.pu.XS_PU_EIQC_SUPPLIER.SUPPLIERType" Role="SUPPLIERDependent" Multiplicity="*"/>
+      </Association>
+      <EntityContainer Name="XS_PU_EIQC_SUPPLIER" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="SUPPLIER" EntityType="production.pu.XS_PU_EIQC_SUPPLIER.SUPPLIERType" />
+        <EntitySet Name="InputParams" EntityType="production.pu.XS_PU_EIQC_SUPPLIER.InputParamsType" />
+        <AssociationSet Name="InputParams_SUPPLIER" Association="production.pu.XS_PU_EIQC_SUPPLIER.InputParams_SUPPLIERType">
+          <End Role="InputParamsPrincipal" EntitySet="InputParams"/>
+          <End Role="SUPPLIERDependent" EntitySet="SUPPLIER"/>
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

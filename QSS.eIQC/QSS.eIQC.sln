@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.Handlers", "QSS.Handlers\QSS.eIQC.Handlers.csproj", "{C541D666-BA64-436A-B339-FE806B6B9970}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.Domain", "QSS.Domain\QSS.eIQC.Domain.csproj", "{16737D90-630C-47FD-8BCD-2C7A77D96868}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.DataAccess", "QSS.DataAccess\QSS.eIQC.DataAccess.csproj", "{F1D7F3F6-4119-4D1B-AC4C-3C24CB8694B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2447962A-BD24-4872-AE2A-482D49EDEFE7}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.Infrastucture.Core", "QSS.Infrastucture.Core\QSS.eIQC.Infrastucture.Core.csproj", "{B7BB18F6-1A36-4CA1-8EAF-163516ED88C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.Api", "QSS.Api\QSS.eIQC.Api.csproj", "{66CA8911-359F-43A5-9D58-5B0144CE8B80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.TM1Sync", "QSS.eIQC.TM1Sync\QSS.eIQC.TM1Sync.csproj", "{137278B4-8BA7-4E11-9D2F-774DB599F2B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.Utilities", "QSS.eIQC.Utilities\QSS.eIQC.Utilities.csproj", "{2BFB6E06-93B6-48B6-B24C-455ECD9624C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.SAPHana.Services", "QSS.eIQC.SAPHana.Services\QSS.eIQC.SAPHana.Services.csproj", "{21341C07-DFC3-4303-B786-A52879ACBF73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.Handlers.UnitTests", "QSS.eIQC.Handlers.UnitTests\QSS.eIQC.Handlers.UnitTests.csproj", "{3C1B00F0-6807-4218-AA23-168595C94F6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.UnitTests.Core", "QSS.eIQC.UnitTests.Core\QSS.eIQC.UnitTests.Core.csproj", "{61E4FF3C-1CA2-4115-AFD3-264B28C78F08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.DataAccess.UnitTests", "QSS.eIQC.DataAccess.UnitTests\QSS.eIQC.DataAccess.UnitTests.csproj", "{1A5B5907-F530-4853-A06B-AB926DE082D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.Api.IntegrationTests", "QSS.eIQC.Api.IntegrationTests\QSS.eIQC.Api.IntegrationTests.csproj", "{55CFFEE5-07FC-42AA-8B13-4D027B210861}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QSS.eIQC.IntegrationTests.Core", "QSS.eIQC.IntegrationTests.Core\QSS.eIQC.IntegrationTests.Core.csproj", "{3F4343BD-188F-421D-9C7C-C53B59DCAC33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QSS.eIQC.SAPSync", "QSS.eIQC.SAPSync\QSS.eIQC.SAPSync.csproj", "{0D2ACE88-B2C2-4142-AC95-B60FF73F3B60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C541D666-BA64-436A-B339-FE806B6B9970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C541D666-BA64-436A-B339-FE806B6B9970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C541D666-BA64-436A-B339-FE806B6B9970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C541D666-BA64-436A-B339-FE806B6B9970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16737D90-630C-47FD-8BCD-2C7A77D96868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16737D90-630C-47FD-8BCD-2C7A77D96868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16737D90-630C-47FD-8BCD-2C7A77D96868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16737D90-630C-47FD-8BCD-2C7A77D96868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1D7F3F6-4119-4D1B-AC4C-3C24CB8694B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1D7F3F6-4119-4D1B-AC4C-3C24CB8694B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1D7F3F6-4119-4D1B-AC4C-3C24CB8694B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1D7F3F6-4119-4D1B-AC4C-3C24CB8694B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7BB18F6-1A36-4CA1-8EAF-163516ED88C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BB18F6-1A36-4CA1-8EAF-163516ED88C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BB18F6-1A36-4CA1-8EAF-163516ED88C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BB18F6-1A36-4CA1-8EAF-163516ED88C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CA8911-359F-43A5-9D58-5B0144CE8B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CA8911-359F-43A5-9D58-5B0144CE8B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CA8911-359F-43A5-9D58-5B0144CE8B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CA8911-359F-43A5-9D58-5B0144CE8B80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{137278B4-8BA7-4E11-9D2F-774DB599F2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137278B4-8BA7-4E11-9D2F-774DB599F2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137278B4-8BA7-4E11-9D2F-774DB599F2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137278B4-8BA7-4E11-9D2F-774DB599F2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFB6E06-93B6-48B6-B24C-455ECD9624C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFB6E06-93B6-48B6-B24C-455ECD9624C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFB6E06-93B6-48B6-B24C-455ECD9624C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFB6E06-93B6-48B6-B24C-455ECD9624C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21341C07-DFC3-4303-B786-A52879ACBF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21341C07-DFC3-4303-B786-A52879ACBF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21341C07-DFC3-4303-B786-A52879ACBF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21341C07-DFC3-4303-B786-A52879ACBF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1B00F0-6807-4218-AA23-168595C94F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1B00F0-6807-4218-AA23-168595C94F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1B00F0-6807-4218-AA23-168595C94F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1B00F0-6807-4218-AA23-168595C94F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E4FF3C-1CA2-4115-AFD3-264B28C78F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E4FF3C-1CA2-4115-AFD3-264B28C78F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E4FF3C-1CA2-4115-AFD3-264B28C78F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E4FF3C-1CA2-4115-AFD3-264B28C78F08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A5B5907-F530-4853-A06B-AB926DE082D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5B5907-F530-4853-A06B-AB926DE082D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5B5907-F530-4853-A06B-AB926DE082D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5B5907-F530-4853-A06B-AB926DE082D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55CFFEE5-07FC-42AA-8B13-4D027B210861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CFFEE5-07FC-42AA-8B13-4D027B210861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CFFEE5-07FC-42AA-8B13-4D027B210861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CFFEE5-07FC-42AA-8B13-4D027B210861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4343BD-188F-421D-9C7C-C53B59DCAC33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4343BD-188F-421D-9C7C-C53B59DCAC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4343BD-188F-421D-9C7C-C53B59DCAC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4343BD-188F-421D-9C7C-C53B59DCAC33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2ACE88-B2C2-4142-AC95-B60FF73F3B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2ACE88-B2C2-4142-AC95-B60FF73F3B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2ACE88-B2C2-4142-AC95-B60FF73F3B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2ACE88-B2C2-4142-AC95-B60FF73F3B60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D64D8AE-EB17-44BD-93C4-64179126CA99}
+	EndGlobalSection
+EndGlobal

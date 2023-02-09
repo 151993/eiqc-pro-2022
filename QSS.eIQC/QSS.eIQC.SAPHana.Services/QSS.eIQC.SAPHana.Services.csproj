@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="MoqData\SupplierData.json" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="MoqData\Commodity.json" />
+		<EmbeddedResource Include="MoqData\MaterialGroup.json" />
+		<EmbeddedResource Include="MoqData\SupplierData.json" />
+		<EmbeddedResource Include="MoqData\PartData.json" />
+		<EmbeddedResource Include="MoqData\AppearanceInspectionItem.json" />
+		<EmbeddedResource Include="MoqData\CommodityCategory.json" />
+		<EmbeddedResource Include="MoqData\CommodityNames.json" />
+		<EmbeddedResource Include="MoqData\FunctionTestItem.json" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QSS.Domain\QSS.eIQC.Domain.csproj" />
+	  <ProjectReference Include="..\QSS.eIQC.Utilities\QSS.eIQC.Utilities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.Data.Edm" Version="5.8.4" />
+    <PackageReference Include="Microsoft.Data.OData" Version="5.8.4" />
+    <PackageReference Include="Microsoft.Data.Services.Client" Version="5.8.4" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Spatial" Version="5.8.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+
+</Project>

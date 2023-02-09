@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema Namespace="production.pu.XS_PU_COMMODITY_CLASSIFICATION" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="COMMODITY_CLASSType">
+				<Key>
+					<PropertyRef Name="ID" />
+				</Key>
+				<Property Name="ID" Type="Edm.String" Nullable="false" MaxLength="40" />
+				<Property Name="PART_NO" Type="Edm.String" MaxLength="40" />
+				<Property Name="SITE_NO" Type="Edm.String" MaxLength="4" />
+				<Property Name="COMMODITY_ID" Type="Edm.String" MaxLength="10" />
+				<Property Name="COMMODITY_NAME" Type="Edm.String" MaxLength="1" />
+				<Property Name="COMMODITY_DESC" Type="Edm.String" MaxLength="40" />
+				<Property Name="VALID_FROM" Type="Edm.String" MaxLength="8" />
+				<Property Name="VALID_TO" Type="Edm.String" MaxLength="8" />
+				<Property Name="CREATED_BY" Type="Edm.String" MaxLength="12" />
+				<Property Name="CREATED_ON" Type="Edm.String" MaxLength="8" />
+				<Property Name="CHANGED_ON" Type="Edm.String" MaxLength="8" />
+				<Property Name="STATUS" Type="Edm.String" MaxLength="1" />
+			</EntityType>
+			<EntityContainer Name="XS_PU_COMMODITY_CLASSIFICATION" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="COMMODITY_CLASS" EntityType="production.pu.XS_PU_COMMODITY_CLASSIFICATION.COMMODITY_CLASSType" />
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,209 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.SAPHana.MockServices\\QSS.eIQC.SAPHana.MockServices.csproj": {}
+  },
+  "projects": {
+    "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Domain\\QSS.eIQC.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Domain\\QSS.eIQC.Domain.csproj",
+        "projectName": "QSS.eIQC.Domain",
+        "projectPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Domain\\QSS.eIQC.Domain.csproj",
+        "packagesPath": "C:\\nuget\\global-packages\\.nuget\\packages",
+        "outputPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\2930217\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj": {
+                "projectPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "QSS.Common.Utilities.EntityFramework": {
+              "target": "Package",
+              "version": "[0.1.207714, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.SAPHana.MockServices\\QSS.eIQC.SAPHana.MockServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.SAPHana.MockServices\\QSS.eIQC.SAPHana.MockServices.csproj",
+        "projectName": "QSS.eIQC.SAPHana.MockServices",
+        "projectPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.SAPHana.MockServices\\QSS.eIQC.SAPHana.MockServices.csproj",
+        "packagesPath": "C:\\nuget\\global-packages\\.nuget\\packages",
+        "outputPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.SAPHana.MockServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\2930217\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Domain\\QSS.eIQC.Domain.csproj": {
+                "projectPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.Domain\\QSS.eIQC.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj",
+        "projectName": "QSS.eIQC.Utilities",
+        "projectPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\QSS.eIQC.Utilities.csproj",
+        "packagesPath": "C:\\nuget\\global-packages\\.nuget\\packages",
+        "outputPath": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\2930217\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

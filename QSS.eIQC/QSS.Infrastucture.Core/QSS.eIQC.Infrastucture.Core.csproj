@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Connected Services\QSSODataService\QSSODataServiceCsdl.xml" />
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.0.35" />
+    <PackageReference Include="AWSSDK.S3" Version="3.7.1.5" />
+    <PackageReference Include="AWSSDK.SecurityToken" Version="3.5.1.18" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Data.Edm" Version="5.8.4" />
+    <PackageReference Include="Microsoft.Data.OData" Version="5.8.4" />
+    <PackageReference Include="Microsoft.Data.Services.Client" Version="5.8.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.6" />
+    <PackageReference Include="Microsoft.OData.Client" Version="7.8.1" />
+    <PackageReference Include="Microsoft.OData.Core" Version="7.8.1" />
+    <PackageReference Include="Microsoft.OData.Edm" Version="7.8.1" />
+    <PackageReference Include="Microsoft.OData.Extensions.Client" Version="1.0.6" />
+    <PackageReference Include="Microsoft.OData.Extensions.Client.Abstractions" Version="1.0.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="QSS.Common.Utilities.FileStorage" Version="0.1.207714" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Spatial" Version="5.8.4" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Exceptions\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\QSS.eIQC.Utilities\QSS.eIQC.Utilities.csproj" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+
+</Project>

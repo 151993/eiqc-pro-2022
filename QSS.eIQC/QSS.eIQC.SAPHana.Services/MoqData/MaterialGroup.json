@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "IsEnabled": true,
+    "SiteName": "Site 1",
+    "MaterialGroupName": "Material Group 1"
+  },
+  {
+    "Id": 2,
+    "IsEnabled": true,
+    "SiteName": "Site 2",
+    "MaterialGroupName": "Material Group 2"
+  },
+  {
+    "Id": 3,
+    "IsEnabled": true,
+    "SiteName": "Site 3",
+    "MaterialGroupName": "Material Group 3"
+  },
+  {
+    "Id": 4,
+    "IsEnabled": true,
+    "SiteName": "Site 4",
+    "MaterialGroupName": "Material Group 4"
+  },
+  {
+    "Id": 5,
+    "IsEnabled": true,
+    "SiteName": "Site 5",
+    "MaterialGroupName": "Material Group 5"
+  },
+  {
+    "Id": 6,
+    "IsEnabled": true,
+    "SiteName": "Site 6",
+    "MaterialGroupName": "Material Group 6"
+  }
+]

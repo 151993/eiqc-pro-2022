@@ -1,0 +1,37 @@
+﻿[
+  {
+    "Id": 1,
+    "userId": 1,
+    "roleId": 1
+  },
+  {
+    "Id": 2,
+    "userId": 2,
+    "roleId": 1
+  },
+  {
+    "Id": 3,
+    "userId": 3,
+    "roleId": 1
+  },
+  {
+    "Id": 4,
+    "userId": 4,
+    "roleId": 1
+  },
+  {
+    "Id": 5,
+    "userId": 5,
+    "roleId": 1
+  },
+  {
+    "Id": 6,
+    "userId": 6,
+    "roleId": 1
+  },
+  {
+    "Id": 7,
+    "userId": 7,
+    "roleId": 1
+  }
+]  

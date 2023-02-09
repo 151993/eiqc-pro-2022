@@ -1,0 +1,35 @@
+﻿{
+  "ProviderId": "Microsoft.OData.ConnectedService",
+  "Version": "0.12.0.0",
+  "GettingStartedDocument": {
+    "Uri": "https://msdn.microsoft.com/en-us/library/cc668772(v=vs.110).aspx"
+  },
+  "ExtendedData": {
+    "ServiceName": "PartODataService",
+    "Endpoint": "E:\\Projects\\EIQC\\Api\\QSS.eIQC\\QSS.eIQC.SAPHana.Services\\MetaData\\XS_PU_PARTNUMBER_SITE_MANUF.xml",
+    "EdmxVersion": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": 0,
+      "MajorRevision": 0,
+      "MinorRevision": 0
+    },
+    "GeneratedFileNamePrefix": "Reference",
+    "UseNamespacePrefix": false,
+    "NamespacePrefix": "Reference",
+    "UseDataServiceCollection": true,
+    "MakeTypesInternal": false,
+    "OpenGeneratedFilesInIDE": false,
+    "GenerateMultipleFiles": false,
+    "CustomHttpHeaders": null,
+    "IncludeWebProxy": false,
+    "WebProxyHost": null,
+    "IncludeWebProxyNetworkCredentials": false,
+    "WebProxyNetworkCredentialsUsername": null,
+    "WebProxyNetworkCredentialsPassword": null,
+    "WebProxyNetworkCredentialsDomain": null,
+    "IncludeCustomHeaders": false,
+    "ExcludedSchemaTypes": []
+  }
+}

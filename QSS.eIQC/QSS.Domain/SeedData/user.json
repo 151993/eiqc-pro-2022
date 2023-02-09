@@ -1,0 +1,72 @@
+﻿[
+  {
+    "Id": 1,
+    "userName": "0",
+    "name": "System User",
+    "email": "system_user@jabil.com",
+    "employeeId": "0",
+    "managerId": "1",
+    "departmentId": "1",
+    "siteId": null
+  },
+  {
+    "Id": 2,
+    "userName": "1232922",
+    "name": "Sandip Patil",
+    "email": "sandip_patil2@jabil.com",
+    "employeeId": "1232922",
+    "managerId": "1",
+    "departmentId": "1",
+    "siteId": null
+  },
+  {
+    "Id": 3,
+    "userName": "2925872",
+    "name": "NurShazwani Md.Akhir",
+    "email": "NurShazwani_Md.Akhir@Jabil.com",
+    "employeeId": "2925872",
+    "managerId": "2",
+    "departmentId": "1",
+    "siteId": null
+  },
+  {
+    "Id": 4,
+    "userName": "2932913",
+    "name": "Viknes Rajinran",
+    "email": "viknes_rajinran@jabil.com",
+    "employeeId": "2932913",
+    "managerId": "2",
+    "departmentId": "1",
+    "siteId": null
+  },
+  {
+    "Id": 5,
+    "userName": "2930217",
+    "name": "Amol Gaikwad",
+    "email": "Amol_Gaikwad@Jabil.com",
+    "employeeId": "2930217",
+    "managerId": "1",
+    "departmentId": "1",
+    "siteId": null
+  },
+  {
+    "Id": 6,
+    "userName": "2978245",
+    "name": "Prashanth Madakatte",
+    "email": "Prashanth_Madakatte@jabil.com",
+    "employeeId": "2978245",
+    "managerId": "3",
+    "departmentId": "1",
+    "siteId": null
+  },
+  {
+    "Id": 7,
+    "userName": "2930215",
+    "name": "Alok Saste",
+    "email": "alok_saste@jabil.com",
+    "employeeId": "2930215",
+    "managerId": "1",
+    "departmentId": "1",
+    "siteId": null
+  }
+]
